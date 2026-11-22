@@ -6,4 +6,4 @@
 # memory management.
 #
 env RUSTDOCFLAGS=-Zsanitizer=address RUSTFLAGS=-Zsanitizer=address \
-    cargo run -Zbuild-std --target x86_64-unknown-linux-gnu --release
+    cargo run -Zbuild-std --target x86_64-unknown-linux-gnu --release --example leak_test
